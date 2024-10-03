@@ -10,4 +10,7 @@ function clock() {
 
 setInterval(clock, 1000);
 
+// TODO: Clock
+// TODO: TOGGLE for dark and light mode
+// TODO: dropdown to select country
 
