@@ -19,11 +19,19 @@
     /* row-gap: 5px;
     column-gap: 5px; */
     grid-template-rows: 1fr 1fr;
-    gap: 5px;
+    /* gap: 5px; */
 
 }
 
-/* .date-box, .clock-box {
-    height: 25%;
-    width: 100%;
-} */
+.date-box, .clock-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #ffffff;
+    font-size: 6em;
+}
+
+.date-box div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
