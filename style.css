@@ -1,7 +1,6 @@
 * {
     border: 1px solid white;
     color: #ffffff;
-
 }
 .main {
     height: 100vh;
@@ -12,9 +11,10 @@
     align-items: center;
 }
 
-.country-box, .day-box {
+.country-box,
+.day-box {
     font-size: 6em;
-    font-weight:900;
+    font-weight: 900;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,10 +30,10 @@
     column-gap: 5px; */
     grid-template-rows: 1fr 1fr;
     /* gap: 5px; */
-
 }
 
-.date-box, .clock-box {
+.date-box,
+.clock-box {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
