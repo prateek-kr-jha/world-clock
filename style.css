@@ -1,10 +1,20 @@
 * {
     border: 1px solid white;
+    color: #ffffff;
+
 }
 .main {
     height: 100vh;
     width: 100vw;
     /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-box, .day-box {
+    font-size: 6em;
+    font-weight:900;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,9 +34,10 @@
 }
 
 .date-box, .clock-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
     font-size: 6em;
 }
 
