@@ -1,44 +1,13 @@
-import { countryTimeZones } from "./const.mjs"
+import { clock } from "./clock.mjs";
 
-function clock(countryCode) {
-    if(!countryTimeZones) {
-        throw new Error("country code can't be empty.");
-    } 
-    countryCode = countryCode.toUpperCase();
 
-    if(!countryTimeZones[countryCode]) {
-        throw new Error("No config for this country.");
-    }
-    let currentTimestamp = Date.now();
-    let currentTime = new Intl.DateTimeFormat('en-IN', {
-        timeZone: countryTimeZones[countryCode.toUpperCase()],
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric', 
-        hourCycle: 'h23'
-    });
-    let currentDate = new Intl.DateTimeFormat('en-IN', {
-        timeZone: countryTimeZones[countryCode.toUpperCase()],
-        year: "numeric",
-        month: "numeric",
-        day: "numeric"
-
-    });
+function populateDisplay(countryCode="IN") {
+    let time = clock(countryCode);
+    let clock_display = document.querySelector(".clock-box");
+    let date_display = document.querySelector(".date-box");
     
-    
-    return {
-        time: currentTime.format(currentTimestamp),
-        date: currentDate.format(currentTimestamp)
-    };
-
+    clock_display.innerText = time.time;
+    date_display.innerText = time.date;
 }
 
-
-// setInterval(clock, 1000);
-
-console.log(clock("FR"));
-
-// TODO: Clock
-// TODO: TOGGLE for dark and light mode
-// TODO: dropdown to select country
-
+setInterval(populateDisplay,1000);
