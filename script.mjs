@@ -10,3 +10,7 @@ function populateDisplay(countryCode = 'IN') {
 }
 
 setInterval(populateDisplay, 1000)
+
+// TODO: Clock
+// TODO: TOGGLE for dark and light mode
+// TODO: dropdown to select country

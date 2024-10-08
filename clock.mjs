@@ -36,6 +36,4 @@ function clock(countryCode) {
 
 export { clock }
 
-// TODO: Clock
-// TODO: TOGGLE for dark and light mode
-// TODO: dropdown to select country
+
