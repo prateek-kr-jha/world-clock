@@ -1,4 +1,6 @@
-import { clock } from './clock.mjs'
+import { clock } from './clock.mjs';
+import { createUI } from './ui.mjs';
+
 
 function populateDisplay(countryCode = 'IN') {
     let time = clock(countryCode)
@@ -8,7 +10,8 @@ function populateDisplay(countryCode = 'IN') {
     clock_display.innerText = time.time
     date_display.innerText = time.date
 }
-
+createUI();
+setTimeout(console.log("hi"), 1000)
 setInterval(populateDisplay, 1000)
 
 // TODO: Clock

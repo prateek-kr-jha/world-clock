@@ -30,9 +30,6 @@ function clock(countryCode) {
     }
 }
 
-// setInterval(clock, 1000);
-
-// console.log(clock("AU"));
 
 export { clock }
 
