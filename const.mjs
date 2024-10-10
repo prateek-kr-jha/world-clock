@@ -4,6 +4,6 @@ const countryTimeZones = {
     JP: 'Asia/Tokyo',
     AU: 'Australia/Sydney',
     GB: 'Europe/London',
-}
+};
 
-export { countryTimeZones }
+export { countryTimeZones };
