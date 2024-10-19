@@ -15,7 +15,7 @@ const closeModal = ()=>{
 }
 
 openModalBtn.addEventListener("click", openModal);
-closeModal.addEventListener("click", closeModal);
+closeModalBtn.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", (e) => {
     if(e.key == "Escape" && !modal.classList.contains("hidden")) {
