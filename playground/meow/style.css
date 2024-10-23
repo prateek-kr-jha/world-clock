@@ -25,6 +25,14 @@
     border-radius: 7px;
     font-size: 1.5rem;
     font-weight: 900;
+    opacity: 0.93;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    /* background-color: #10375c; */
+    opacity: 1;
+    font-size: 1.6rem;
 }
 
 .modal {
