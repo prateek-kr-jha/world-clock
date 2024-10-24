@@ -86,7 +86,7 @@ button {
     bottom: 150px;
 }
 
-.btn-clos {
+.btn-close {
     transform: translate(10px, -20px);
     padding: 0.5rem 0.7rem;
     background: #eee;
