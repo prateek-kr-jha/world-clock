@@ -3,3 +3,24 @@
     padding: 0;
     margin: 0;
 }
+
+.main {
+    min-height: 100vh;
+    background-color: #fffecb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    height: 21rem;
+    width: 31rem;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.carousel-slide {
+    height: 20rem;
+    width: 30rem;
+    border: 1px solid black;
+}
